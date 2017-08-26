@@ -8,7 +8,7 @@
 
     <head>
         <meta charset="utf-8" />
-        <title>SWEB管理面板 - 首页</title>
+        <title>PSWP管理面板 - 首页</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <!-- BEGIN GLOBAL MANDATORY STYLES -->
@@ -52,7 +52,7 @@
             <div class="page-header-inner ">
                 <!-- BEGIN LOGO -->
                 <div class="page-logo">
-                    <a href="index.php">SWEB管理面板</a>
+                    <a href="index.php">PSWP管理面板</a>
                     <div class="menu-toggler sidebar-toggler">
                         <!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
                     </div>
