@@ -41,7 +41,7 @@
     <body class="page-header-fixed page-sidebar-closed-hide-logo page-container-bg-solid page-md">
 		<!--PHP LOAD JSON--!>
 		<?PHP
-		$json_string = file_get_contents('shadowsocks.json');
+		$json_string = file_get_contents('/etc/shadowsocks.json');
 		$data = json_decode($json_string, true);
 		$myip = $_SERVER['SERVER_ADDR'];
 		?>
@@ -88,7 +88,7 @@
                             </li>
                             <li class="divider"> </li>
                             <li>
-                                <a href="https://github.com/ishkong/SWEB">
+                                <a href="https://github.com/ishkong/personalSSRwebpane">
                                     <i class="icon-flag"></i> 关于我们
                                 </a>
                             </li>
