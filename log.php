@@ -1,15 +1,4 @@
 <!DOCTYPE html>
-<!-- 
-Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.6
-Version: 4.5.4
-Author: KeenThemes
-Website: http://www.keenthemes.com/
-Contact: support@keenthemes.com
-Follow: www.twitter.com/keenthemes
-Like: www.facebook.com/keenthemes
-Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
-License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
--->
 <!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
 <!--[if !IE]><!-->
@@ -91,7 +80,7 @@ License: You must have a valid license purchased only from themeforest(the above
                             </li>
                             <li class="divider"> </li>
                             <li>
-                                <a href="https://github.com/ishkong/SWEB">
+                                <a href="https://github.com/ishkong/personalSSRwebpane">
                                     <i class="icon-flag"></i> 关于我们
                                 </a>
                             </li>
@@ -277,7 +266,7 @@ License: You must have a valid license purchased only from themeforest(the above
                             <div class="note note-danger note-bordered">
                                 <h4 class="block">内容</h4>
                                 <p><?php
-$file_path = "shadowsocksr.log";
+$file_path = "/var/log/shadowsocksr.log";
 if(file_exists($file_path)){
 $file_arr = file($file_path);
 for($i=0;$i<count($file_arr);$i++){//逐行读取文件内容
