@@ -317,10 +317,10 @@
                                                         <div class="mt-comment-info">
                                                             <span class="mt-comment-author">加密方式</span>
                                                         </div>
-                                                        <div class="mt-comment-text"><?php echo $data[password];?></div>
+                                                        <div class="mt-comment-text"><?php echo $data[method];?></div>
                                                     </div>
                                                 </div>
-												<div class="mt-comment">
+						<div class="mt-comment">
                                                     <div class="mt-comment-body">
                                                         <div class="mt-comment-info">
                                                             <span class="mt-comment-author">协议</span>
