@@ -263,7 +263,7 @@
                     </div>
                     <!-- END PAGE HEADER-->
                     <div class="row">
-                        <form action='set.php' method='post'><div class="col-md-12 ">
+                        <div class="col-md-12 ">
                             <!-- BEGIN SAMPLE FORM PORTLET-->
                             <div class="portlet light ">
                                 <div class="portlet-title">
@@ -273,7 +273,7 @@
                                     </div>
                                 </div>
                                 <div class="portlet-body form">
-                                    <form role="form">
+                                    <form role="form" action='set.php' method='post'>
                                         <div class="form-body">
                                             <div class="form-group form-md-line-input">
                                                 <input type="number" class="form-control" id="setport" placeholder="<?php echo $data[server_port];?>">
@@ -362,7 +362,7 @@
                                 </div>
                             </div>
                             <!-- END SAMPLE FORM PORTLET-->
-                        </div></form>
+                        </div>
                     </div>
                 </div>
                 <!-- END CONTENT BODY -->
