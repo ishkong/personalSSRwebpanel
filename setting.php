@@ -273,40 +273,40 @@
                                     </div>
                                 </div>
                                 <div class="portlet-body form">
-                                    <form role="form" action='set.php' method='post'>
+                                    <form name="setting" action='set.php' method='post'>
                                         <div class="form-body">
                                             <div class="form-group form-md-line-input">
-                                                <input type="number" class="form-control" id="setport" placeholder="<?php echo $data[server_port];?>">
+                                                <input type="number" class="form-control" name="setport" placeholder="<?php echo $data[server_port];?>">
                                                 <label for="form_control_1">端口号</label>
                                                 <span class="help-block">1-65535</span>
                                             </div>
                                             <div class="form-group form-md-line-input">
-                                                <input type="password" class="form-control" id="setpassword" placeholder="<?php echo $data[password];?>">
+                                                <input type="password" class="form-control" name="setpassword" placeholder="<?php echo $data[password];?>">
                                                 <label for="form_control_1">连接密码</label>
                                                 
                                             </div>
                                             <div class="form-group form-md-line-input">
-                                                <input type="number" class="form-control" id="setspeed_limit_per_con" placeholder="<?php echo $data[speed_limit_per_con];?>">
+                                                <input type="number" class="form-control" name="setspeed_limit_per_con" placeholder="<?php echo $data[speed_limit_per_con];?>">
                                                 <label for="form_control_1">单线程限速:</label>
 												<span class="help-block">0为无限制</span>
                                             </div>
                                             <div class="form-group form-md-line-input">
-                                                <input type="number" class="form-control" id="setspeed_limit_per_user" placeholder="<?php echo $data[speed_limit_per_user];?>">
+                                                <input type="number" class="form-control" name="setspeed_limit_per_user" placeholder="<?php echo $data[speed_limit_per_user];?>">
                                                 <label for="form_control_1">总端口限速:</label>
 												<span class="help-block">0为无限制</span>
                                             </div>
                                             <div class="form-group form-md-line-input">
-                                                <input type="text" class="form-control" id="setprotocol_param" placeholder="">
+                                                <input type="text" class="form-control" name="setprotocol_param" placeholder="">
                                                 <label for="form_control_1">协议参数:</label>
 												<span class="help-block">如果不懂，请保留为空</span>
                                             </div>
                                             <div class="form-group form-md-line-input">
-                                                <input type="text" class="form-control" id="setobfs_param" placeholder="">
+                                                <input type="text" class="form-control" name="setobfs_param" placeholder="">
                                                 <label for="form_control_1">混淆参数:</label>
 												<span class="help-block">如果不懂，请保留为空</span>
                                             </div>
                                             <div class="form-group form-md-line-input">
-                                                <select class="form-control" id="setmethod">
+                                                <select class="form-control" name="setmethod">
                                                     <option value="none">none</option>
                                                     <option value="aes-256-cfb">aes-256-cfb</option>
                                                     <option value="aes-192-cfb">aes-192-cfb</option>
@@ -326,7 +326,7 @@
 												<span class="help-block">当前选用的加密方式为：<?php echo $data[method];?></span>
                                             </div>
 											<div class="form-group form-md-line-input">
-                                                <select class="form-control" id="setprotocol">
+                                                <select class="form-control" name="setprotocol">
                                                     <option value="origin">origin</option>
                                                     <option value="verify_deflate">verify_deflate</option>
                                                     <option value="auth_sha1_v4">auth_sha1_v4</option>
@@ -340,7 +340,7 @@
 												<span class="help-block">当前选用的协议方式为：<?php echo $data[protocol];?></span>
                                             </div>
 											<div class="form-group form-md-line-input">
-                                                <select class="form-control" id="setobfs">
+                                                <select class="form-control" name="setobfs">
                                                     <option value="plain">plain</option>
                                                     <option value="http_simple">http_simple</option>
                                                     <option value="http_post">http_post</option>
